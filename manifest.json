@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Mobile Media Blocker",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.0.0",
+  "homepage_url": "https://github.com/M-Reimer/mobilemediablocker",
+  "author": "Manuel Reimer",
+
+  "applications": {
+    "gecko": {
+      "id": "{fe871e8c-4234-4902-99ca-9a648f383f11}"
+    }
+  },
+
+  "icons": {
+    "24": "icons/mobilemediablocker.svg",
+    "32": "icons/mobilemediablocker.svg",
+    "50": "icons/mobilemediablocker.svg"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "icons/mobilemediablocker.svg",
+    "default_title": "__MSG_button_title__"
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+
+  "default_locale": "en"
+}
